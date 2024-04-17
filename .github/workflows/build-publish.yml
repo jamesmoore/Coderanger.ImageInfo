@@ -53,7 +53,7 @@ jobs:
 
     # Generate and update version info
     - name: Update Version in Properties
-      uses: Amadevus/pwsh-script@v2.0.0
+      uses: Amadevus/pwsh-script@v2.0.3
       with:
         script: ./.github/UpdateVersion.ps1
 
