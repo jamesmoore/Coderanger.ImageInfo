@@ -14,8 +14,6 @@ jobs:
         options:
           - os: ubuntu-latest
             dotnetversion: 6.0.x
-          - os: ubuntu-18.04
-            dotnetversion: 6.0.x
           - os: macos-latest
             dotnetversion: 6.0.x
           - os: windows-latest
