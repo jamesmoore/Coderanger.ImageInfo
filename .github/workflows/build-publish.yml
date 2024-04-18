@@ -36,7 +36,7 @@ jobs:
       with:
         path-to-opencover-xml: ./Tests/TestResults/coverage.opencover.xml
         minimum-coverage: 70
-        repo-token: ${{ secrets.CI_ACTIONS }}
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
         commit-badges: false
 
     - name: Install GitVersion
@@ -64,15 +64,14 @@ jobs:
 
     - name: Publish to GitHub and Nuget
       run: |
-        dotnet nuget add source --username danpetitt --password ${{ secrets.CI_ACTIONS }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/CodeRanger-com/index.json"
-        dotnet nuget push "./bin/Release/Coderanger.ImageInfo.${{ steps.gitversion.outputs.SemVer }}.nupkg" --api-key ${{ secrets.CI_ACTIONS }} --source "github"
-        dotnet nuget push "./bin/Release/Coderanger.ImageInfo.${{ steps.gitversion.outputs.SemVer }}.nupkg" --api-key ${{ secrets.NUGET_API_KEY }} --source "https://api.nuget.org/v3/index.json"
-
+        dotnet nuget add source --username jamesmoore --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/jamesmoore/index.json"
+        dotnet nuget push "./bin/Release/Coderanger.ImageInfo.${{ steps.gitversion.outputs.SemVer }}.nupkg" --api-key ${{ secrets.GITHUB_TOKEN }} --source "github"
+    
     - name: Produce Changelog and Commit Files
       uses: danpetitt/changelog-file-generator@v2.2.0
       id: changelog
       with:
-        token: ${{ secrets.CI_ACTIONS }}
+        token: ${{ secrets.GITHUB_TOKEN }}
         exclude: build,docs,tests,ci,chore,Merge branch
         file: ./CHANGELOG.md
         release_version: v${{ steps.gitversion.outputs.SemVer }}
@@ -83,7 +82,7 @@ jobs:
     - name: Create Release
       uses: actions/create-release@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.CI_ACTIONS }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         tag_name: v${{ steps.gitversion.outputs.SemVer }}
         release_name: Release v${{ steps.gitversion.outputs.SemVer }}
