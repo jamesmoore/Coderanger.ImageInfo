@@ -68,7 +68,7 @@ jobs:
         dotnet nuget push "./bin/Release/Coderanger.ImageInfo.${{ steps.gitversion.outputs.SemVer }}.nupkg" --api-key ${{ secrets.GITHUB_TOKEN }} --source "github"
     
     - name: Produce Changelog and Commit Files
-      uses: danpetitt/changelog-file-generator@v2.2.0
+      uses: danpetitt/changelog-file-generator@v2.2.1
       id: changelog
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
