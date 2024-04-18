@@ -1,5 +1,14 @@
 # Coderanger.ImageInfo
 
+## [Release v0.2.2](https://github.com/jamesmoore/Coderanger.ImageInfo/releases/tag/v0.2.2) (2024-04-18)
+
+### Other Changes
+
+* **deps:**
+  * bump coverlet.msbuild from 3.1.1 to 6.0.2 ([c2d93e80](https://github.com/jamesmoore/Coderanger.ImageInfo/commit/c2d93e80291fee116387376b6b19a8d95b8817b0))
+  * bump MSTest.TestAdapter from 2.2.8 to 3.3.1 ([22951bfd](https://github.com/jamesmoore/Coderanger.ImageInfo/commit/22951bfd3f4c440603988025b307f6fad840012b))
+
+
 ## [Release v0.2.1](https://github.com/jamesmoore/Coderanger.ImageInfo/releases/tag/v0.2.1) (2024-04-18)
 
 ### Other Changes
