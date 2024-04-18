@@ -1,5 +1,13 @@
 # Coderanger.ImageInfo
 
+## [Release v0.2.1](https://github.com/jamesmoore/Coderanger.ImageInfo/releases/tag/v0.2.1) (2024-04-18)
+
+### Other Changes
+
+* **deps:**
+  * bump actions/setup-dotnet from 1 to 4 ([d174297b](https://github.com/jamesmoore/Coderanger.ImageInfo/commit/d174297b35fff3fd2202e2bfaacd1e94bb8197fb))
+
+
 ## [Release v0.2.0](https://github.com/jamesmoore/Coderanger.ImageInfo/releases/tag/v0.2.0) (2024-04-18)
 
 ### Bug Fixes
