@@ -1,5 +1,14 @@
 # Coderanger.ImageInfo
 
+## [Release v0.2.3](https://github.com/jamesmoore/Coderanger.ImageInfo/releases/tag/v0.2.3) (2024-04-18)
+
+### Other Changes
+
+* **deps:**
+  * bump Microsoft.NET.Test.Sdk from 17.0.0 to 17.9.0 ([443d1246](https://github.com/jamesmoore/Coderanger.ImageInfo/commit/443d12467b070172e58e36c81341ec1711c4adcb))
+  * bump coverlet.msbuild from 3.1.1 to 6.0.2 ([c2d93e80](https://github.com/jamesmoore/Coderanger.ImageInfo/commit/c2d93e80291fee116387376b6b19a8d95b8817b0))
+
+
 ## [Release v0.2.2](https://github.com/jamesmoore/Coderanger.ImageInfo/releases/tag/v0.2.2) (2024-04-18)
 
 ### Other Changes
