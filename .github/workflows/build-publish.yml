@@ -13,7 +13,7 @@ jobs:
 
     if: "!contains(github.event.head_commit.message, '[skip ci]')"
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
       with:
         fetch-depth: 0
 
@@ -40,12 +40,12 @@ jobs:
         commit-badges: false
 
     - name: Install GitVersion
-      uses: gittools/actions/gitversion/setup@v0.9.5
+      uses: gittools/actions/gitversion/setup@v1.1.1
       with:
         versionSpec: 5.x
 
     - name: Use GitVersion
-      uses: gittools/actions/gitversion/execute@v0.9.5
+      uses: gittools/actions/gitversion/execute@v1.1.1
       id: gitversion # step id used as reference for output values
       with:
         useConfigFile: true
@@ -53,7 +53,7 @@ jobs:
 
     # Generate and update version info
     - name: Update Version in Properties
-      uses: Amadevus/pwsh-script@v2.0.0
+      uses: Amadevus/pwsh-script@v2.0.3
       with:
         script: ./.github/UpdateVersion.ps1
 
