@@ -4,8 +4,8 @@
     <Authors>CodeRanger</Authors>
     <Company>CodeRanger</Company>
     <Copyright>Copyright (c) CodeRanger. All rights reserved.</Copyright>
-    <Version>0.2.3</Version>
-    <FileVersion>0.2.3</FileVersion>
-    <InformationalVersion>0.2.3</InformationalVersion>
+    <Version>0.2.4</Version>
+    <FileVersion>0.2.4</FileVersion>
+    <InformationalVersion>0.2.4</InformationalVersion>
   </PropertyGroup>
 </Project>
