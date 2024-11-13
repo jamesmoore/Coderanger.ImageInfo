@@ -1,5 +1,13 @@
 # Coderanger.ImageInfo
 
+## [Release v0.2.7](https://github.com/jamesmoore/Coderanger.ImageInfo/releases/tag/v0.2.7) (2024-11-13)
+
+### Other Changes
+
+* **deps:**
+  * bump Microsoft.NET.Test.Sdk from 17.9.0 to 17.11.1 ([51fa5dcc](https://github.com/jamesmoore/Coderanger.ImageInfo/commit/51fa5dccb423c9273a94562bfe819f8b53facc4e))
+
+
 ## [Release v0.2.6](https://github.com/jamesmoore/Coderanger.ImageInfo/releases/tag/v0.2.6) (2024-11-13)
 
 ### Other Changes
