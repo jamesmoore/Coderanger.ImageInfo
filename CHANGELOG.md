@@ -1,5 +1,14 @@
 # Coderanger.ImageInfo
 
+## [Release v0.2.5](https://github.com/jamesmoore/Coderanger.ImageInfo/releases/tag/v0.2.5) (2024-11-13)
+
+### Other Changes
+
+* **deps:**
+  * bump ReportGenerator from 5.2.4 to 5.3.8 ([a513b252](https://github.com/jamesmoore/Coderanger.ImageInfo/commit/a513b2520d1673c548fc7968ee228082eae4fe2a))
+  * bump MSTest.TestAdapter from 3.3.1 to 3.5.0 ([be07607d](https://github.com/jamesmoore/Coderanger.ImageInfo/commit/be07607d75a2faa953a8b1142dba866df1961036))
+
+
 ## [Release v0.2.4](https://github.com/jamesmoore/Coderanger.ImageInfo/releases/tag/v0.2.4) (2024-11-13)
 
 
