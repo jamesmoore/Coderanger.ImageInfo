@@ -21,7 +21,7 @@ internal record IptcValue( uint Tag, byte[] Data )
 
   internal static List<IMetadataTypedValue>? Decode( ReadOnlySpan<byte> buffer )
   {
-    if( buffer == null || buffer[ 0 ] != 0x1c )
+    if( buffer[ 0 ] != 0x1c )
     {
       return null;
     }
